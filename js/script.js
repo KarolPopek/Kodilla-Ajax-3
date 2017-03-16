@@ -25,6 +25,10 @@ function showCountriesList(resp)
 	{
    		resp.forEach(function(item)
 		{
+			var countryCode = item.alpha2Code;
+			$('#myImage').attr('src', "http://cristiroma.github.io/countries/data/flags/" + countryCode + "-128.png");
+			$('#myImage').css("display", "block");
+			
 			$('<li>').text(item.name).appendTo(countriesList);
 			$('<li>').text(item.capital).appendTo(countriesList);
 			$('<li>').text(item.region).appendTo(countriesList);

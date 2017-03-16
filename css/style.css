@@ -15,7 +15,6 @@ h1 {
 h2 {
 	font-size: 33px;
 	font-weight: 700;
-	margin: 50px 0;
 }
 
 #search {
@@ -48,31 +47,38 @@ ul {
     list-style: none;
     padding: 0;
     margin: 0;
+	position: absolute;
 }
 
 li {
 	background-color: rgb(52, 152, 219);
-	margin: 50px 0 20px 30%;
 	padding: 10px 0;
+	margin: 0 0 20px 500px;
 	width: 600px;
 	font-size: 22px;
 	font-weight: 400;
-	
 }
 
-li:nth-of-type(2)::before{
-	content: "Stolica: ";
-	margin-right: 30px;
+li:nth-of-type(4n + 2)::before{
+ content: "Stolica: ";
+ margin-right: 30px;
 }
 
-li:nth-of-type(3)::before{
-	content: "Region: ";
-	margin-right: 30px;
+li:nth-of-type(4n + 3)::before{
+ content: "Region: ";
+ margin-right: 30px;
 }
 
-li:nth-of-type(4)::before{
-	content: "Populacja: ";
-	margin-right: 30px;
+li:nth-of-type(4n + 4)::before{
+ content: "Populacja: ";
+ margin-right: 30px;
+}
+
+#myImage{
+	position: relative;
+	top: -10px;
+	left: 750px;
+	display: none;
 }
 
 
